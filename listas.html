@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Revisão</title>
+</head>
+<body>
+	<header>
+		<img src="http://lorempixel.com/200/100/technics" alt="tecnologia" title="imagem aleatória">
+		<h1 id="top">Revisão HTML listas</h1>
+		<nav>
+			<ul>
+				<li>
+					<a href="#listord">Listas&nbsp;Ordenadas</a>
+				</li>
+				<li>
+					<a href="#listdesord">Listas&nbsp;Desordenadas</a>
+				</li>
+				<li>
+					<a href="#testopreform">Texto Pre-formatado</a>
+				</li>
+				<li>
+					<a href="#tabelas">Tabelas lindas e belas</a>
+					<ul>
+						<li><a href="#tabex1">Tabela 1</a></li>
+						<li><a href="#tabex2">Tabela 2</a></li>
+						<li><a href="#tabex3">Tabela 3</a></li>
+						<li><a href="#tabex4">Tabela 4</a></li>
+						<li><a href="#tabex5">Tabela 5</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<article>
+		<hgroup>
+			<h2 id="listord">Listas&nbsp;Ordenadas</h2>
+			<h3>Tags: &lt;ol&gt;
+				<br>&lt;li&gt;&lt;/li&gt;
+				<br>&lt;/ol&gt;
+			</h3>
+		</hgroup>
+			<p>
+				Permite criar listas numeradas
+			</p>
+			<h4>
+				Exemplo:
+			</h4>
+			<ol>
+				<li>
+					Item da lista
+				</li>
+				<li>
+					Item da lista
+				</li>
+				<li>
+					Item da lista
+				</li>
+				<li>
+					Item da lista
+				</li>
+				<li>
+					Item da lista
+				</li>
+			</ol>
+		<hgroup>
+			<h2 id="listdesord">
+				Listas&nbsp;Desordenadas
+			</h2>
+			<h3>
+				Tags: &lt;ul&gt;
+				<br>&lt;li&gt;&lt;/li&gt;
+				<br>&lt;/ul&gt;
+			</h3>
+		</hgroup>
+			<p></p>
+			<h4>Exemplo:</h4>
+				<ul>
+				<li>
+					Item da lista desordenada
+				</li>
+				<li>
+					Item da lista desordenada
+				</li>
+				<li>
+					Item da lista desordenada
+				</li>
+				<li>
+					Item da lista desordenada
+				</li>
+			</ul>
+		<hgroup>
+			<h2 id="testopreform">Texto pré-formatado</h2>
+			<h3>Tag &lt;pre&gt;</h3>
+		</hgroup>
+			<p>Digitar texto com multiplos espaços, tabulações e quebras de linha.</p>
+			<h4>Exemplo:</h4>
+			<pre>
+Multiplos E S  P A Ç O S 
+Quebras
+de 
+linha
+			</pre>
+	</article>
+	<hgroup>
+		<h2 id="tabelas">Tabelas lindas e belas</h2>
+		<h3>Tags: &lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;th&gt;</h3>
+	</hgroup>
+	<p>Permite organizar dados tabulares.</p>
+	<h4 id="tabex1">Exemplo 1:</h4>
+	<table border="1">
+		<tr>
+			<th>
+				Norte
+			</th>
+			<th>
+				Sul
+			</th>
+			<th>
+				Este
+			</th>
+			<th>
+				Oeste
+			</th>
+		</tr>
+		<tr>
+			<th>
+				Title
+			</th>
+			<td>
+				Data
+			</td>
+			<td>
+				Data
+			</td>
+			<td>
+				Data
+			</td>
+		</tr>
+		<tr>
+			<th>
+				Title
+			</th>
+			<td>
+				Data
+			</td>
+			<td>
+				Data
+			</td>
+			<td>
+				Data
+			</td>
+		</tr>
+		<tr>
+			<th>
+				Title
+			</th>
+			<td>
+				Data
+			</td>
+			<td>
+				Data
+			</td>
+			<td>
+				Data
+			</td>
+		</tr>
+	</table>
+	<br>
+	<h4 id="tabex2">Exemplo 2:</h4>
+	<table border="1">
+		<tr>
+			<th colspan="4">Colspan4</th>
+		</tr>
+		<tr>
+			<td>data 1</td>
+			<td>data 2</td>
+			<td>data 3</td>
+			<td>data 4</td>
+		</tr>
+		<tr>
+			<td>data 5</td>
+			<td>data 6</td>
+			<td>data 7</td>
+			<td>data 8</td>
+		</tr>
+		<tr>
+			<td>data 9</td>
+			<td>data 10</td>
+			<td>data 11</td>
+			<td>data 12</td>
+		</tr>
+	</table>
+	<br>
+	<h4 id="tabex3">Exemplo 3:</h4>
+		<table border="1">
+		<tr>
+			<th rowspan="4">Rowspan4</th>
+		</tr>
+		<tr>
+			<td>data 1</td>
+			<td>data 2</td>
+			<td>data 3</td>
+			<td>data 4</td>
+		</tr>
+		<tr>
+			<td>data 5</td>
+			<td>data 6</td>
+			<td>data 7</td>
+			<td>data 8</td>
+		</tr>
+		<tr>
+			<td>data 9</td>
+			<td>data 10</td>
+			<td>data 11</td>
+			<td>data 12</td>
+		</tr>
+	</table>
+	<br>
+	<h4 id="tabex4">Exemplo 4:</h4>
+		<table border="1">
+		<tr>
+			<th colspan="4">Colspan4</th>
+		</tr>
+		<tr>
+			<td rowspan="3">Rowspan</td>
+			<td>data 1</td>
+			<td>data 2</td>
+			<td>data 3</td>
+		</tr>
+		<tr>
+			<td>data 4</td>
+			<td>data 5</td>
+			<td>data 6</td>
+		</tr>
+		<tr>
+			<td>data 7</td>
+			<td>data 8</td>
+			<td>data 9</td>
+		</tr>
+	</table>
+	<br>
+	<!--table[border="1"]>(tr>td*4)*4-->
+	<h4 id="tabex5">Exemplo 5:</h4>
+	<table border="1">
+		<tr>
+			<td>data</td>
+			<td>data</td>
+			<td>data</td>
+			<td>data</td>
+		</tr>
+		<tr>
+			<td>data</td>
+			<td>data</td>
+			<td>data</td>
+			<td>data</td>
+		</tr>
+		<tr>
+			<td>data</td>
+			<td>data</td>
+			<td colspan="2" rowsp
+			an="2">colspan & rowspan 2</td>
+		</tr>
+			<tr>
+			<td>data</td>
+			<td>data</td>
+		</tr>
+	</table>
+	<br>
+	<h3><a href="#top">Go to top</a></h3>
+</body>
+</html>
