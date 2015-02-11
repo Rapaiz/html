@@ -232,6 +232,52 @@
                     </tr>
                 </table>
 		</div>
+		<div id="forms">
+			<hgroup>
+				<h2>Formulários</h2>
+				<h3>Tags form, label, button, input, textarea, select, option</h3>
+			</hgroup>
+			<p>Permitem recolher informação e interagir com os utilizadores
+			</p>
+			<h4>Exemplo:</h4>
+			<form action=""
+			 method="get">
+				<label for="nome">Nome:</label><br>
+				<input type="text" name="nome" /><br>
+				
+				<label for="email">Email:</label><br>
+				<input type="email" name="email" /><br>
+				
+				<label for="idade">Idade:</label><br>
+				<input type="number" name="idade" min="1" max="10"><br>
+				
+				<label for="estciv">Estado Civil:</label><br>
+				<input type="radio" name="estciv" checked="checked">Casado<br>
+				<input type="radio" name="estciv">Solteiro<br>
+
+				<label for="desportos">Desportos Preferidos:</label><br>
+				<input type="checkbox" name="desportos">Futebol<br>
+				<input type="checkbox" name="desportos">Basket<br>
+				<input type="checkbox" name="desportos">Andebol<br>
+				<input type="checkbox" name="desportos">Volei<br>
+
+				<label for="msg">O seu Comentário:</label><br>
+				<textarea style="resize:none" name="msg" id="msg" cols="30" rows="10" maxlenght="10"></textarea><br>
+
+				<label for="pagam">Forma de Pagamento:</label>
+				<select name="pagam" id="pagam">
+					<option value="">Paypal</option>
+					<option value="">Cheque</option>
+					<option value="">Cartão Crédito</option>
+					<option value="">Contra-Reembolso</option>
+				</select><br>
+	
+				<input type="submit" value="Enviar" />
+				<input type="reset" value="Arrependi-me" />
+				
+			</form>
+		</div>
+
     </article>
 
     <h4><a href="#header">back to top</a></h4>
