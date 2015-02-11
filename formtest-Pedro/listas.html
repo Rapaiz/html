@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Revisão HTML</title>
+</head>
+<body>
+<div id="forms">
+	<hgroup>
+		<h2>Formulários</h2>
+		<h3>Tags form, label, button, input, textarea, select, option</h3>
+	</hgroup>
+	<p>Permitem recolher informação e interagir com os utilizadores</p>
+	<h4>Exemplo:</h4>
+	<form action="processa.php" method="get">
+		<label for="nome">Nome:</label><br>
+		<input type="text" name="nome" /><br>
+
+		<label for="email">Email:</label><br>
+		<input type="email" name="email" /><br>
+
+		<label for="idade">Idade:</label><br>
+		<input type="number" name="idade" min="1" max="5"/><br>
+
+		<label for="estciv">Estado Civil:</label><br>
+		<input type="radio" name="estciv" value="Casado">Casado <br>
+		<input type="radio" name="estciv" checked="checked" value="Solteiro">Solteiro<br>
+
+		<label for="desportos">Desportos preferidos:</label><br>
+		<input type="checkbox" name="desportos[0]" value="Futebol">Futebol <br>
+		<input type="checkbox" name="desportos[1]" value="Basketball" checked>Basketball<br>
+		<input type="checkbox" name="desportos[2]" value="Atletismo">Atletismo<br>
+
+		<label for="msg">O seu Comentário:</label><br>
+		<textarea style="resize:none" name="msg" id="msg" cols="30" rows="10"></textarea>
+		<br>
+		
+		<label for="pagam">Forma de pagamento:</label><br>
+		<select name="pagam" id="pagam">
+			<option value="0">Paypal</option>
+			<option value="1">Cheque</option>
+			<option value="2">Contra-reembolso</option>
+		</select>
+		<br>
+		<input type="submit" value="Enviar" />
+		<input type="reset" value="Arrependi-me" />
+	</form>
+</div>
+</body>
+</html>
