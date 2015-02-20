@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Revisão</title>
+	<style>
+	 	/**{
+	 		margin:0;
+	 		padding:0;
+	 	}*/
+		div{
+			position:relative;
+			/*width: 220px;*/
+			height:400px;
+			background-color: #eef;
+			overflow-y:scroll;
+			overflow-x:hidden;
+			/*text-align: center;*/
+		}
+
+		h1{
+			display:none;
+			width:200px;
+			height:200px;
+			background-color: pink;
+			/*margin:0 auto;*/
+			/*float:right;*/
+			text-align: center;
+			line-height: 200px;
+			position: fixed;
+			top:10px;
+			right:10px;
+		}
+		p{
+			text-align: left;
+			clear:both;
+			/*letter-spacing: 0.05em;
+			word-spacing: 0.1em;*/
+
+		}
+		p::first-line{
+			font-weight: bold;
+		}
+		/*p::first-letter{
+			display: block;
+			font-size: 2em;
+			border: 1px solid black;
+			padding:0.5em;
+		}*/
+
+		li:nth-child(2n+1){
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>CSS Rocks!</h1>
+		<ul>
+   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+   <li>Aliquam tincidunt mauris eu risus.</li>
+   <li>Vestibulum auctor dapibus neque.</li>
+   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+   <li>Aliquam tincidunt mauris eu risus.</li>
+   <li>Vestibulum auctor dapibus neque.</li>
+</ul>
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+		</p>
+	</div>
+</body>
+</html>
