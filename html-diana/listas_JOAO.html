@@ -3,14 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Revisão</title>
-	<link rel="stylesheet" href="css/stylejoao.css">
-
-
 </head>
 <body>
 	<header>
 		<img src="http://lorempixel.com/200/100/technics" alt="tecnologia" title="Imagem aleatória">
-		<h1 id="Top">Revisão HTML</h1>
+		<h1 id="Top">Revisão HTML Listas</h1>
 		<nav>
 			<ul>
 				<li><a href="#listord">Listas Ordenadas</a></li>
@@ -30,9 +27,8 @@
 		</nav>
 	</header>
 	<article>
-	<div id="listord">
 		<hgroup>
-			<h2>Listas Ordenadas</h2>
+			<h2 id="listord">Listas Ordenadas</h2>
 			<h3>&lt;ol&gt;<br>&lt;li&gt;Item da lista&lt;/li&gt;<br>&lt;/ol&gt;</h3>
 		</hgroup>
 			<p>Permite criar listas numeradas.</p>
@@ -44,11 +40,10 @@
 					<li>Item da Lista</li>
 					<li>Item da Lista</li>
 				</ol>
-	</div>
-	<div id="listdsord">
+
 		<!--(hgroup>h2>h3)+p+h4{Exemplo}--> 
 		<hgroup>
-			<h2>Listas Desordenadas</h2>
+			<h2 id="listdsord">Listas Desordenadas</h2>
 			<h3>Tag:<br> &lt;ul&gt; <br> &lt;li&gt;Item da Lista&lt;/li&gt; <br> &lt;/ul&gt;</h3>
 		</hgroup>
 		<p></p>
@@ -60,35 +55,30 @@
 					<li>Item da Lista</li>
 					<li>Item da Lista</li>
 		</ul>
-	</div>
-	<div id="txtpre">
+		
+
 
 		<hgroup>
-			<h2>Texto pré-formatado</h2>
+			<h2 id="txtpre">Texto pré-formatado</h2>
 			<h3>Tag &lt;pre&gt;&lt;/pre&gt;</h3>
 		</hgroup>
 			<p>Permite digiar texto com múltiplos espaços, tabulações e quebras de linha.</p>
 			<h4>Exemplo:</h4>
+<pre>Múltiplos E   S   P   A   Ç   O   S
+Quebras
+de
+Linha
+</pre>
 
-
-		<pre>
-		Múltiplos E   S   P   A   Ç   O   S
-		Quebras
-		de
-		Linha
-		</pre>
-	</div>
-	<div id="tbls">
-		
 		<hgroup>
-			<h2>Tabelas</h2>
+			<h2 id="tbls">Tabelas</h2>
 			<h3>Tags &lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</h3>
 		</hgroup>
 		<p>Permite organizar dados tabelares.</p>
 		<h4 id="tabex1">Exemplo1</h4>
 	
 	
-		<!-- table[border="1"]>(tr>th{Titúlo$}*4)+(tr>th{Títulos$}+td{Dados}*3)*3 -->		
+	<!-- table[border="1"]>(tr>th{Titúlo$}*4)+(tr>th{Títulos$}+td{Dados}*3)*3 -->		
 		<table border="1">
 			<tr>
 				<th>Titúlo1</th>
@@ -217,86 +207,6 @@
 				<td>Data2</td>
 			</tr>
 		</table>
-	</div>
-		<!--div#forms>(hgroup>h2+h3)+p+h4-->
-	<div id="forms">
-		<hgroup>
-			<h2>Formulários</h2>
-			<h3>Tags Form, Label, Button, Input, Text Area, Select, Option.</h3>
-		</hgroup>
-		<p>Permitem recolher dados e interagir com os utilizadores.</p>
-		<h4>Exemplo:</h4>
-		
-		<form action="#" method="get">
-			<label for="nome">Nome:</label>
-			<input type="text" name="nome"/>
-			
-			<br><br>
-			
-			<label for="email">E-mail:</label>
-			<input type="email" name="email"/>
-			
-			<br><br>
-			
-			<label for="idade">Idade:</label>
-			<input type="number" name="idade" min="1" max="99"/>			
-			
-			<br><br>
-			
-			<label for="estciv">Estado Civil:</label><br>
-			<input type="radio" name"estciv">Casado <br>
-			<input type="radio" name"estciv" checked="checked">Solteiro <br>
-			<input type="radio" name"estciv">Divorciado <br>
-			<input type="radio" name"estciv">Viúvo <br>
-			
-			<br> 
-			
-			<label for="desfav">Desportos Favoritos:</label><br>
-			<input type="Checkbox" name"desfav">Futebol <br>
-			<input type="Checkbox" name"desfav" checked="checked">Basketball <br>
-			<input type="Checkbox" name"desfav">Atletismo <br>
-
-			<br>
-
-			<label for="msg">O seu comentário:</label><br>
-			<textarea style="resize:none" maxlength="150" name="msg" id="msg" cols="60" rows="5"></textarea>
-			
-			<br><br>
-
-			<label for="pagam">Forma de Pagamento:</label>
-			<select name="pagam" id="pagam">
-				<option value="">Paypal</option>
-				<option value="">Cheque</option>
-				<option value="">Contra-reembolso</option>
-			</select>
-
-			<br><br>
-			
-
-
-
-			<input type="submit" value="Enviar"/>
-			<input type="reset" value="Reset" />
-	
-				
-
-
-
-		</form>
-	</div>
-		
-		
-
-
-
-
-
-
-
-
-
-
-
 
 		<h3><a href="#Top">Voltar ao Inicio</a></h3>
 
