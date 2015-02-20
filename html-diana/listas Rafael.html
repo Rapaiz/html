@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Revisão HTML</title>
+</head>
+
+<body>
+    <header id="header">
+        <img src="http://lorempixel.com/200/100/technics" alt="tecnologia" title="Home">
+        <h1>Revisão HTML Listas</h1>
+        <nav>
+            <ul>
+                <li><a href="#listord">Listas Ordenadas</a>
+                </li>
+                <li><a href="#listdes">Listas Desordenadas</a>
+                </li>
+                <li><a href="#txtpre">Texto pré-formatado</a>
+                </li>
+                <li><a href="#tabs">Tabelas</a>
+                    <ul>
+                        <li><a href="#tabex1">Exemplo 1</a>
+                        </li>
+                        <li><a href="#tabex2">Exemplo 2</a>
+                        </li>
+                        <li><a href="#tabex3">Exemplo 3</a>
+                        </li>
+                        <li><a href="#tabex4">Exemplo 4</a>
+                        </li>
+                        <li><a href="#tabex5">Exemplo 5</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <div id="listord">
+            <hgroup >
+                <h2>Listas Ordenadas</h2>
+                <h3>&lt;ol&gt;<br />
+					&lt;li&gt;item da lista&lt;/li&gt;<br />
+					&lt;ol&gt;
+				</h3>
+            </hgroup>
+            <h4>Exemplo:</h4>
+            <ol>
+                <li>Item da Lista</li>
+                <li>Item da Lista</li>
+                <li>Item da Lista</li>
+                <li>Item da Lista</li>
+                <li>Item da Lista</li>
+            </ol>
+        </div>
+        <div id="listdes">
+            <hgroup>
+                <h2>Listas Desordenadas</h2>
+                <h3>Tag &lt;ul&gt;</h3>
+            </hgroup>
+            <p></p>
+            <h4>Exemplo</h4>
+            <ul>
+                <li>Item da Lista</li>
+                <li>Item da Lista</li>
+                <li>Item da Lista</li>
+                <li>Item da Lista</li>
+                <li>Item da Lista</li>
+            </ul>
+        </div>
+        <div id="txtpre">
+            <hgroup>
+                <h2>Texto pré-formatado</h2>
+                <h3>Tag &lt;pre&gt;</h3>
+
+            </hgroup>
+            <div>
+                <p>permite digitar texto com múltiplos espaços, tabulações e quebras de linha
+                </p>
+                <h4>Exemplo</h4>
+                <pre>Múltiplos E   S   P   A   Ç   O   S
+				Quebras
+				de
+				Linha
+				</pre>
+            </div>
+        </div>
+    	<div id="tabs">
+                <hgroup>
+                    <h2>Tabelas</h2>
+                    <h3>Tags &lt;table&gt;, &lt;tr&gt;, &lt;td&gt; e &lt;th&gt;</h3>
+                </hgroup>
+                <p>Permite organizar dados tabelares.</p>
+
+                <h4 id="tabex1">exemplo:</h4>
+                <table border="1">
+                    <tr>
+                        <th>Titulo1</th>
+                        <th>Titulo2</th>
+                        <th>Titulo3</th>
+                        <th>Titulo4</th>
+                    </tr>
+                    <tr>
+                        <th>Titulo1</th>
+                        <td>Dados1</td>
+                        <td>Dados2</td>
+                        <td>Dados3</td>
+                    </tr>
+                    <tr>
+                        <th>Titulo2</th>
+                        <td>Dados1</td>
+                        <td>Dados2</td>
+                        <td>Dados3</td>
+                    </tr>
+                    <tr>
+                        <th>Titulo3</th>
+                        <td>Dados1</td>
+                        <td>Dados2</td>
+                        <td>Dados3</td>
+                    </tr>
+                </table>
+                <p></p>
+
+                <h4 id="tabex2">Exemplo 1:</h4>
+                <table border="1">
+                    <tr>
+                        <th colspan="4">colsan 4</th>
+                    </tr>
+                    <tr>
+                        <td>data1</td>
+                        <td>data2</td>
+                        <td>data3</td>
+                        <td>data4</td>
+                    </tr>
+                    <tr>
+                        <td>data1</td>
+                        <td>data2</td>
+                        <td>data3</td>
+                        <td>data4</td>
+                    </tr>
+                    <tr>
+                        <td>data1</td>
+                        <td>data2</td>
+                        <td>data3</td>
+                        <td>data4</td>
+                    </tr>
+                </table>
+                <p></p>
+
+                <h4 id="tabex3">Exemplo 2:</h4>
+                <table border="1">
+                    <tr>
+                        <th rowspan="4">rowspan 4</th>
+                    </tr>
+                    <tr>
+                        <td>data1</td>
+                        <td>data2</td>
+                        <td>data3</td>
+                        <td>data4</td>
+                    </tr>
+                    <tr>
+                        <td>data1</td>
+                        <td>data2</td>
+                        <td>data3</td>
+                        <td>data4</td>
+                    </tr>
+                    <tr>
+                        <td>data1</td>
+                        <td>data2</td>
+                        <td>data3</td>
+                        <td>data4</td>
+                    </tr>
+                </table>
+                <p></p>
+
+                <h4 id="tabex4">Exemplo 3:</h4>
+                <table border="1">
+                    <tr>
+                        <th colspan="4">col span 4</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="3"> row span 3</td>
+                        <td>data1</td>
+                        <td>data2</td>
+                        <td>data3</td>
+                    </tr>
+                    <tr>
+                        <td>data1</td>
+                        <td>data2</td>
+                        <td>data3</td>
+                    </tr>
+                    <tr>
+                        <td>data1</td>
+                        <td>data2</td>
+                        <td>data3</td>
+                    </tr>
+                </table>
+                <p></p>
+
+                <h4 id="tabex5">Exemplo 4:</h4>
+                <table border="1">
+                    <tr>
+                        <th colspan="5"> col span 5</th>
+                    </tr>
+
+                    <tr>
+                        <th rowspan="5"> row span 5</th>
+                    </tr>
+                    <tr>
+                        <td>data1</td>
+                        <td>data2</td>
+                        <td>data3</td>
+                        <td>data4</td>
+                    </tr>
+                    <tr>
+                        <td>data1</td>
+                        <td>data2</td>
+                        <td>data3</td>
+                        <td>data4</td>
+                    </tr>
+                    <tr>
+                        <td>data1</td>
+                        <td>data2</td>
+                        <td>data3</td>
+                        <td>data4</td>
+                    </tr>
+                    <tr>
+                        <td>data1</td>
+                        <td>data2</td>
+                        <td>data3</td>
+                        <td>data4</td>
+                    </tr>
+                </table>
+		</div>
+		<div id="forms">
+			<hgroup>
+				<h2>Formulários</h2>
+				<h3>Tags form, label, button, input, textarea, select, option</h3>
+			</hgroup>
+			<p>Permitem recolher informação e interagir com os utilizadores
+			</p>
+			<h4>Exemplo:</h4>
+			<form action=""
+			 method="get">
+				<label for="nome">Nome:</label><br>
+				<input type="text" name="nome" /><br>
+				
+				<label for="email">Email:</label><br>
+				<input type="email" name="email" /><br>
+				
+				<label for="idade">Idade:</label><br>
+				<input type="number" name="idade" min="1" max="10"><br>
+				
+				<label for="estciv">Estado Civil:</label><br>
+				<input type="radio" name="estciv" checked="checked">Casado<br>
+				<input type="radio" name="estciv">Solteiro<br>
+
+				<label for="desportos">Desportos Preferidos:</label><br>
+				<input type="checkbox" name="desportos">Futebol<br>
+				<input type="checkbox" name="desportos">Basket<br>
+				<input type="checkbox" name="desportos">Andebol<br>
+				<input type="checkbox" name="desportos">Volei<br>
+
+				<label for="msg">O seu Comentário:</label><br>
+				<textarea style="resize:none" name="msg" id="msg" cols="30" rows="10" maxlenght="10"></textarea><br>
+
+				<label for="pagam">Forma de Pagamento:</label>
+				<select name="pagam" id="pagam">
+					<option value="">Paypal</option>
+					<option value="">Cheque</option>
+					<option value="">Cartão Crédito</option>
+					<option value="">Contra-Reembolso</option>
+				</select><br>
+	
+				<input type="submit" value="Enviar" />
+				<input type="reset" value="Arrependi-me" />
+				
+			</form>
+		</div>
+
+    </article>
+
+    <h4><a href="#header">back to top</a></h4>
+
+</body>
+
+</html>

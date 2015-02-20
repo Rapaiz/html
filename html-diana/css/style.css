@@ -1,0 +1,137 @@
+/*
+	Sintaxe:
+	
+	selector {
+	propriedade: valor(es);
+	}
+
+*/
+
+html{
+	background-color:#FFF;
+}
+
+body{
+	width:70%;
+	background-color:#F0F0F0;
+	box-shadow: 0 0 2px 3px #e0e0e0;
+	margin:0 auto;
+	padding: 60px;
+	
+}
+
+
+/* Base text formation*/
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Verdana, Helvetica, sans-serif;
+}
+
+h1{
+	font-weight: normal;
+}
+
+p{
+	color:#333;
+}
+
+/* Top menu */
+
+header nav {
+	text-align:center;
+}
+
+header nav a {
+	text-decoration: none;
+	color:red;
+}
+
+header nav ul{
+	padding:0;
+}
+
+header nav li {
+	list-style: none;
+}
+
+header nav>ul>li {
+	list-style: none;
+	display:inline-block;
+	height:57px;
+	position:relative;
+}
+
+
+header nav>ul>li>a {
+	padding:3px;
+	border: 1px solid red;
+	display: inline-block;
+	width:180px;
+	height:45px;
+	text-align:center;
+	line-height:45px;
+	text-transform: uppercase;
+	font-family: Arial, sans-serif;
+	margin-right:20px;
+	font-size:80%;
+}
+
+header nav>ul>li>a:hover {
+	color:#FFF;
+	background-color:red;
+	}
+
+header nav>ul>li:last-child>a {
+	margin-right:0;
+}
+
+header nav ul ul  {
+	display:none;
+	padding:0;
+	border:1px solid red;
+	border-top:none;
+	width:186px;
+	position:absolute;
+	right:0;
+
+}
+
+header nav ul ul:hover {
+	display:block;
+}
+
+
+header nav>ul>li>a:hover+ul{
+	display:block;
+	
+}
+
+header nav>ul>li>ul>li{
+	list-style:none;
+}
+
+header nav>ul>li>ul>li a{
+	display:block;
+	height:36px;
+	width:186px;
+	color:red;
+	line-height:36px;
+	border-bottom:1px solid red;
+}
+
+header nav>ul>li>ul>li a:hover{
+	background-color: red;
+	color:#FFF;
+}
+
+header nav>ul>li>ul>li:last-child>a{
+	display:block;
+	height:36px;
+	width:186px;
+	color:red;
+	line-height:36px;
+	border-bottom:none;
+}
+
+

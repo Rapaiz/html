@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="UTF-8">
+	<title>Revisão</title>
+</head>
+<body>
+	<header>
+		<img src="http://lorempixel.com/200/100/technics" alt="tecnologia" title="Imagem aleatória">
+		<h1 id="Top">Revisão HTML Listas</h1>
+		<nav>
+			<ul>
+				<li><a href="#listord">Listas Ordenadas</a></li>
+				<li><a href="#listdsord">Listas Desordenadas</a></li>
+				<li><a href="#txtpre">Texto Pré-Formatado</a></li>
+				<li><a href="#tbls">Tabelas</a>
+			<!--ul>(li>a[href="#tabex$"]{Exemplo $})*4-->
+				<ul>
+					<li><a href="#tabex1">Exemplo 1</a></li>
+					<li><a href="#tabex2">Exemplo 2</a></li>
+					<li><a href="#tabex3">Exemplo 3</a></li>
+					<li><a href="#tabex4">Exemplo 4</a></li>
+				</ul>
+
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<article>
+		<hgroup>
+			<h2 id="listord">Listas Ordenadas</h2>
+			<h3>&lt;ol&gt;<br>&lt;li&gt;Item da lista&lt;/li&gt;<br>&lt;/ol&gt;</h3>
+		</hgroup>
+			<p>Permite criar listas numeradas.</p>
+			<h4>Exemplo:</h4>
+				<ol>
+					<li>Item da Lista</li>
+					<li>Item da Lista</li>
+					<li>Item da Lista</li>
+					<li>Item da Lista</li>
+					<li>Item da Lista</li>
+				</ol>
+
+		<!--(hgroup>h2>h3)+p+h4{Exemplo}--> 
+		<hgroup>
+			<h2 id="listdsord">Listas Desordenadas</h2>
+			<h3>Tag:<br> &lt;ul&gt; <br> &lt;li&gt;Item da Lista&lt;/li&gt; <br> &lt;/ul&gt;</h3>
+		</hgroup>
+		<p></p>
+		<h4>Exemplo</h4>
+		<ul>
+					<li>Item da Lista</li>
+					<li>Item da Lista</li>
+					<li>Item da Lista</li>
+					<li>Item da Lista</li>
+					<li>Item da Lista</li>
+		</ul>
+		
+
+
+		<hgroup>
+			<h2 id="txtpre">Texto pré-formatado</h2>
+			<h3>Tag &lt;pre&gt;&lt;/pre&gt;</h3>
+		</hgroup>
+			<p>Permite digiar texto com múltiplos espaços, tabulações e quebras de linha.</p>
+			<h4>Exemplo:</h4>
+<pre>Múltiplos E   S   P   A   Ç   O   S
+Quebras
+de
+Linha
+</pre>
+
+		<hgroup>
+			<h2 id="tbls">Tabelas</h2>
+			<h3>Tags &lt;table&gt;, &lt;tr&gt;, &lt;td&gt;, &lt;th&gt;</h3>
+		</hgroup>
+		<p>Permite organizar dados tabelares.</p>
+		<h4 id="tabex1">Exemplo1</h4>
+	
+	
+	<!-- table[border="1"]>(tr>th{Titúlo$}*4)+(tr>th{Títulos$}+td{Dados}*3)*3 -->		
+		<table border="1">
+			<tr>
+				<th>Titúlo1</th>
+				<th>Titúlo2</th>
+				<th>Titúlo3</th>
+				<th>Titúlo4</th>
+			</tr>
+			<tr>
+				<th>Títulos1</th>
+				<td>Dados</td>
+				<td>Dados</td>
+				<td>Dados</td> 
+			</tr>
+			<tr>
+				<th>Títulos2</th>
+				<td>Dados</td>
+				<td>Dados</td>
+				<td>Dados</td>
+			</tr>
+			<tr>
+				<th>Títulos3</th>
+				<td>Dados</td>
+				<td>Dados</td>
+				<td>Dados</td>
+			</tr>
+		</table><br>
+		
+
+		<!-- table[border="1"]>(tr>th[colspan="4"]{colspan 4})+(tr>td{data$}*4)*3 -->
+		<h4 id="tabex2">Exemplo2</h4>
+		<table border="1">
+			<tr>
+				<th colspan="4">colspan 4</th>
+			</tr>
+			<tr>
+				<td>data1</td>
+				<td>data2</td>
+				<td>data3</td>
+				<td>data4</td>
+			</tr>
+			<tr>
+				<td>data1</td>
+				<td>data2</td>
+				<td>data3</td>
+				<td>data4</td>
+			</tr>
+			<tr>
+				<td>data1</td>
+				<td>data2</td>
+				<td>data3</td>
+				<td>data4</td>
+			</tr>
+		</table><br>
+
+		
+		<!--table[border="1"]>(tr>th[rowspan="4"]{rowspan 4})+(tr>td{data$}*4)*3 -->
+		<h4 id="tabex3">Exemplo3</h4>
+		<table border="1">
+			<tr>
+				<th rowspan="4">rowspan 4</th>
+			</tr>
+			<tr>
+				<td>data1</td>
+				<td>data2</td>
+				<td>data3</td>
+				<td>data4</td>
+			</tr>
+			<tr>
+				<td>data1</td>
+				<td>data2</td>
+				<td>data3</td>
+				<td>data4</td>
+			</tr>
+			<tr>
+				<td>data1</td>
+				<td>data2</td>
+				<td>data3</td>
+				<td>data4</td>
+			</tr>
+		</table><br>
+		
+			
+		<!--table[border="1"]>(tr>th[colspan="4"]{colspan 4})+(tr>td[rowspan="3"]{rowspan 3}+td{data$}*3)+(tr>td{data$}*3) -->	
+		<h4 id="tabex4">Exemplo4</h4>
+		<table border="1">
+			<tr>
+				<th colspan="4">colspan 4</th>
+			</tr>
+			<tr>
+				<th rowspan="3">rowspan 3</th>
+				<td>data1</td>
+				<td>data2</td>
+				<td>data3</td>
+			</tr>
+			<tr>
+				<td>data1</td>
+				<td>data2</td>
+				<td>data3</td>
+			</tr>
+
+		</table><br>
+		
+
+		<!-- table[border="1"]>(tr>td{Data$}*4)*4 -->
+		<table border="1">
+			<tr>
+				<td>Data1</td>
+				<td>Data2</td>
+				<td>Data3</td>
+				<td>Data4</td>
+			</tr>
+			<tr>
+				<td>Data1</td>
+				<td>Data2</td>
+				<td>Data3</td>
+				<td>Data4</td>
+			</tr>
+			<tr>
+				<td>Data1</td>
+				<td>Data2</td>
+				<th colspan="2" rowspan="2">colspan e rowspan</th>
+				
+			</tr>
+			<tr>
+				<td>Data1</td>
+				<td>Data2</td>
+			</tr>
+		</table>
+
+		<h3><a href="#Top">Voltar ao Inicio</a></h3>
+
+
+
+
+
+
+		
+
+		
+
+
+			
+	</article>
+</body>
+</html>
