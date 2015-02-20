@@ -1,14 +1,12 @@
 /*
 	Sintaxe:
-
 	selector { propriedade: valor(es); }
-	
 */
+
+/* ------------------  Formatações Gerais   ------------------ */
 html{
 	background-color: white;
 }
-
-
 body{
 	width: 930px;
 	background-color: #f0f0f0;
@@ -23,9 +21,22 @@ h1, h2, h3, h4, h5, h6{
 h1{
 	font-weight: 100;
 }
+p{
+	color:#333;
+}
+
+/* ------------------  Navegação Principal   ------------------ */
+header nav{
+	text-align: center;
+}
+header nav ul{
+	padding:0;
+}
+
+/* ---------- Botões Principais ------------ */
 header nav>ul>li>a{
 	text-decoration: none;
-	display: inline-block;
+	display: block;
 	color:red;
 	padding:5px;
 	border:1px solid red;
@@ -38,33 +49,26 @@ header nav>ul>li>a{
 	margin-right: 20px;
 	font-size: 80%;
 }
+header nav>ul>li:last-child>a{
+	margin-right: 0;
+}
 header nav>ul>li>a:hover{
 	background-color: red;
 	color:white;
 }
-header nav>ul>li:last-child>a{
-	margin-right: 0;
-}
-header nav>ul>li:first-child>a{
-	/*margin-left: 51px;*/
-}
-header nav{
-	text-align: center;
-}
-header nav ul{
-	padding:0;
+/* ---------- Botões Sub Menu ------------ */
+header nav>ul>li{
+	list-style: none;
+	display: inline-block;
+	position: relative; /* - Referência para posicionamento sub-menus - */
 }
 header nav ul ul{
 	display: none;
-	padding: 0;
 	width:192px;
 	position: absolute;
 	left:0;
 }
-header nav ul ul:hover{
-	display: block;
-}
-header nav>ul>li>a:hover+ul{
+header nav ul ul:hover, header nav>ul>li>a:hover+ul{
 	display: block;
 }
 header nav>ul>li>ul>li{
@@ -75,6 +79,7 @@ header nav>ul>li>ul>li>a{
 	height:36px;
 	width:190px;
 	border:1px solid red;
+	border-top: none;
 	text-decoration: none;
 	font-family: Arial;
 	font-size: 70%;
@@ -86,13 +91,4 @@ header nav>ul>li>ul>li>a:hover{
 	background-color: red;
 	color: white;
 }
-header nav>ul>li{
-	list-style: none;
-	display: inline-block;
-	position: relative;
-	height:57px;
-}
-
-p{
-	color:#333;
-}
+/* ------------------  Tabelas   ------------------ */
