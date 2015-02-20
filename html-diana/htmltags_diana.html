@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Revisão HTML</title>
+</head>
+
+<body>
+    <header>
+        <img src="http://lorempixel.com/200/100/technics" alt="tecnologia" title="Imagem aleatória" />
+        <h1>Revisão HTML</h1>
+        <nav>
+            <ul>
+                <li><a href="#listord">Listas Ordenadas</a>
+                </li>
+                <li><a href="#listun">Listas Desordenadas</a>
+                </li>
+                <li><a href="#txtpre">Texto pré-formatado</a>
+                </li>
+                <li>
+                    <a href="#tabs">Tabelas</a>
+                    <!-- ul>(li>a[href="#tabex$"]{Exemplo $})*4 -->
+                    <ul>
+                        <li><a href="#tabex1">Exemplo 1</a>
+                        </li>
+                        <li><a href="#tabex2">Exemplo 2</a>
+                        </li>
+                        <li><a href="#tabex3">Exemplo 3</a>
+                        </li>
+                        <li><a href="#tabex4">Exemplo 4</a>
+                        </li>
+                    </ul>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+	    <div id="listord">
+	        <hgroup>
+	            <h2>Listas Ordenadas</h2>
+	            <h3>&lt;ol&gt;<br />
+						&lt;li&gt;item da lista&lt;/li&gt;<br />
+					&lt;/ol&gt;
+				</h3>
+	        </hgroup>
+	        <p>Permite criar listas numeradas.</p>
+	        <h4>Exemplo:</h4>
+	        <ol>
+	            <li>Item da lista</li>
+	            <li>Item da lista</li>
+	            <li>Item da lista</li>
+	            <li>Item da lista</li>
+	            <li>Item da lista</li>
+	        </ol>
+	    </div>
+		<div id="listun">
+	        <hgroup>
+	            <h2>Listas Desordenadas</h2>
+	            <h3>Tag &lt;ul&gt;</h3>
+	        </hgroup>
+	        <p></p>
+	        <h4>Exemplo:</h4>
+	        <ul>
+	            <li>Item da lista</li>
+	            <li>Item da lista</li>
+	            <li>Item da lista</li>
+	            <li>Item da lista</li>
+	            <li>Item da lista</li>
+	        </ul>
+	    </div>
+	    <div id="txtpre">
+	        <hgroup>
+	            <h2>Texto pré-formatado</h2>
+	            <h3>Tag &lt;pre&gt; </h3>
+	        </hgroup>
+	        <p>Permite digitar texto com múltiplos espaços, tabulações e quebras de linha.</p>
+	        <h4>Exemplo:</h4>
+	        <pre>
+	        	Tabulações
+	        	Múltiplos E   P   A   Ç   O   S
+				Quebras
+				de
+				linha
+			</pre>
+		</div>
+		<div id="tabs">
+	        <hgroup>
+	            <h2>Tabelas</h2>
+	            <h3>Tags &lt;table&gt;, &lt;tr&gt;,&lt;td&gt; e &lt;th&gt;</h3>
+	        </hgroup>
+	        <p>Permite organizar dados tabelares.</p>
+	        <h4 id="tabex1">Exemplo 1:</h4>
+	        <!-- 
+			Emmet: 
+			
+			table[border="1"]>(tr>th{Título$}*4)+(tr>th{Título$}+td{Dados$}*3)*3 
+
+			-->
+	        <table border="1">
+	            <tr>
+	                <th>Título1</th>
+	                <th>Título2</th>
+	                <th>Título3</th>
+	                <th>Título4</th>
+	            </tr>
+	            <tr>
+	                <th>Título1</th>
+	                <td>Dados1</td>
+	                <td>Dados2</td>
+	                <td>Dados3</td>
+	            </tr>
+	            <tr>
+	                <th>Título2</th>
+	                <td>Dados1</td>
+	                <td>Dados2</td>
+	                <td>Dados3</td>
+	            </tr>
+	            <tr>
+	                <th>Título3</th>
+	                <td>Dados1</td>
+	                <td>Dados2</td>
+	                <td>Dados3</td>
+	            </tr>
+	        </table>
+	        <!-- 
+			table[border="1"]>(tr>th[colspan="4"]{colspan 4})+(tr>td{data$}*4)*3
+			-->
+	        <h4 id="tabex2">Exemplo 2:</h4>
+	        <table border="1">
+	            <tr>
+	                <th colspan="4">colspan 4</th>
+	            </tr>
+	            <tr>
+	                <td>data1</td>
+	                <td>data2</td>
+	                <td>data3</td>
+	                <td>data4</td>
+	            </tr>
+	            <tr>
+	                <td>data1</td>
+	                <td>data2</td>
+	                <td>data3</td>
+	                <td>data4</td>
+	            </tr>
+	            <tr>
+	                <td>data1</td>
+	                <td>data2</td>
+	                <td>data3</td>
+	                <td>data4</td>
+	            </tr>
+	        </table>
+	        <!-- Emmet
+			table[border="1"]>(tr>th[colspan="4"]{colspan 4})+(tr>td[rowspan="3"]{rowspan 3}+td{data$}*3)+(tr>td{data$}*3)*2
+			-->
+	        <h4 id="tabex3">Exemplo 3:</h4>
+	        <table border="1">
+	            <tr>
+	                <th colspan="4">colspan 4</th>
+	            </tr>
+	            <tr>
+	                <td rowspan="3">rowspan 3</td>
+	                <td>data1</td>
+	                <td>data2</td>
+	                <td>data3</td>
+	            </tr>
+	            <tr>
+	                <td>data1</td>
+	                <td>data2</td>
+	                <td>data3</td>
+	            </tr>
+	            <tr>
+	                <td>data1</td>
+	                <td>data2</td>
+	                <td>data3</td>
+	            </tr>
+	        </table>
+	        <h4 id="tabex4">Exemplo 4:</h4>
+	        <table border="1">
+	            <tr>
+	                <td>data</td>
+	                <td>data</td>
+	                <td>data</td>
+	                <td>data</td>
+	            </tr>
+	            <tr>
+	                <td>data</td>
+	                <td>data</td>
+	                <td>data</td>
+	                <td>data</td>
+	            </tr>
+	            <tr>
+	                <td>data</td>
+	                <td>data</td>
+	                <td colspan="2" rowspan="2">colspan e rowspan 2</td>
+	            </tr>
+	            <tr>
+	                <td>data</td>
+	                <td>data</td>
+	            </tr>
+	        </table>
+		</div>
+		<div id="forms">
+			<hgroup>
+				<h2>Formulários</h2>
+				<h3>Tags form, label, button, input, textarea, select, option</h3>
+			</hgroup>
+			<p>Permitem recolher informação e interagir com os utilizadores</p>
+			<h4>Exemplo:</h4>
+			<form action="" method="get">
+				<label for="nome">Nome:</label><br>
+				<input type="text" name="nome" /><br>
+
+				<label for="email">Email:</label><br>
+				<input type="email" name="email" /><br>
+
+				<label for="idade">Idade:</label><br>
+				<input type="number" name="idade" min="1" max="5"/><br>
+
+				<label for="estciv">Estado Civil:</label><br>
+				<input type="radio" name="estciv">Casado <br>
+				<input type="radio" name="estciv" checked="checked">Solteiro<br>
+
+				<label for="desportos">Desportos preferidos:</label><br>
+				<input type="checkbox" name="desportos">Futebol <br>
+				<input type="checkbox" name="desportos" checked>Basketball<br>
+				<input type="checkbox" name="desportos">Atletismo<br>
+
+				<label for="msg">O seu Comentário:</label><br>
+				<textarea style="resize:none" name="msg" id="msg" cols="30" rows="10"></textarea>
+				<br>
+				
+				<label for="pagam">Forma de pagamento:</label><br>
+				<select name="pagam" id="pagam" multiple="multiple">
+					<option value="0">Paypal</option>
+					<option value="1">Cheque</option>
+					<option value="2">Contra-reembolso</option>
+				</select>
+				<br>
+				
+
+				<input type="submit" value="Enviar" />
+				<input type="reset" value="Arrependi-me" />
+
+
+			
+			</form
+		</div>
+
+    </article>
+</body>
+</html>
