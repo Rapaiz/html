@@ -7,6 +7,8 @@
 
 */
 
+/**************** Formatações Gerais *************/
+
 html{
 	background-color:#FFF;
 }
@@ -36,7 +38,9 @@ p{
 	color:#333;
 }
 
-/* Top menu */
+
+
+/**************** Navegação Principal *************/
 
 header nav {
 	text-align:center;
@@ -58,7 +62,6 @@ header nav li {
 header nav>ul>li {
 	list-style: none;
 	display:inline-block;
-	height:57px;
 	position:relative;
 }
 
@@ -88,24 +91,18 @@ header nav>ul>li:last-child>a {
 
 header nav ul ul  {
 	display:none;
-	padding:0;
 	border:1px solid red;
 	border-top:none;
 	width:186px;
 	position:absolute;
-	right:0;
+	left:0;
 
 }
 
-header nav ul ul:hover {
+header nav ul ul:hover, header nav>ul>li>a:hover+ul {
 	display:block;
 }
 
-
-header nav>ul>li>a:hover+ul{
-	display:block;
-	
-}
 
 header nav>ul>li>ul>li{
 	list-style:none;
@@ -135,3 +132,27 @@ header nav>ul>li>ul>li:last-child>a{
 }
 
 
+table{
+	border-collapse:collapse;
+	border-color:black;
+}
+
+td, th{
+	padding:12px;
+}
+
+
+/**** linhas pares *****/
+tr:nth-child(2n){
+	background-color:lightgrey;
+}
+
+tr:nth-child(2n+1){
+	background-color:grey;
+	color:white;
+}
+
+tr:hover{
+	background-color:lime;
+	color:black;
+}

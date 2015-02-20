@@ -8,6 +8,7 @@
 
 */
 
+ 		/* ------------- Formatações Gerais -------------- */
 html{
 
 	background-color: white;
@@ -21,12 +22,16 @@ html{
 body{
 	width: 70%;
 	background-color: #F0F0F0;
-	box-shadow: 0 0 2px 3px #E0E0E0; /*http://www.w3schools.com/cssref/css3_pr_box-shadow.asp*/
+	box-shadow: 0 0 2px 3px #E0E0E0; /* http://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
 	padding: 6 0px;
 	margin: 0 auto;
 	font-family: Georgia, Times, serif; 
 	}
 	
+	p{
+		color:#333;
+	}
+		
 
 	h1,h2,h3,h4,h5,h6{
 		font-family: Verdana, Helvetica, sans-serif;
@@ -34,13 +39,16 @@ body{
 	h1{
 		font-weight: 100;
 	}
+		/* ------------- Navegação Principal -------------- */
+	
 	header nav{
 		text-align: center;
 	}
-	header nav a{
-		text-decoration: none;
-		color: red;
+	header nav ul{
+		padding:0;
 	}
+
+		/* ---------- Formatação dos botões ----------*/
 	header nav>ul>li>a{
 		display: inline-block; 
 		padding: 3px;
@@ -65,23 +73,17 @@ body{
 	header nav>ul>li:last-child>a{
 		margin-right: 0;		
 	}
-
+	
 	header nav ul ul{
 		display: none;
-		padding: 0;
-		background-color: 0;
-		width:180px;
+		width:186px;
 		position: absolute;
 		left:0;
 	}
-	header nav ul ul:hover{
+	header nav ul ul:hover,header nav>ul>li>a:hover+ul{
 		display: block;	 
 	}
-	header nav>ul>li>a:hover+ul{
-		display: block;
-		height: ;
 
-	}
 	header nav>ul>li>ul>li{
 		list-style: none;
 	}
@@ -90,7 +92,8 @@ body{
 		height:45px;
 		width:186px;
 		border:1px solid red;
-		border-top: 0;
+
+		border-top:none;
 		text-decoration: none;
 		font-family: Arial;
 		font-size: 70%;
@@ -101,19 +104,45 @@ body{
 	}
 	header nav>ul>li{
 		display: inline-block;
-		position: relative;
+		position: relative; /* - Referência para posicionamento sub-menus - */
 		height: 45px;
-		list-style: none; /*http://www.w3schools.com/cssref/pr_list-style.asp*/
+		list-style: none; /* http://www.w3schools.com/cssref/pr_list-style.asp */
 	}
 	header nav>ul>li>a{
 		display: block;
 		height: 45px;
 		width: 180px;
-
-
-	p{
-		color:#333;
 	}
+
+	/* ---------- Tabelas ---------- */
+
+	table{
+		border-collapse: collapse;
+		border-color: black;
+	}
+	td,th{
+		padding:12px;
+	}
+
+	/* ---------- Linhas Pares ---------- */
+
+	tr:nth-child(2n){
+		background-color: white;
+		color: black;
+	}
+
+	/* --------- Linhas Ímpares -------- */
+
+	tr:nth-child(2n+1){
+		background-color: grey;
+		color: black;
+	}
+	tr:hover{
+		background-color: lime;
+		color: black;
+	}
+
+
 	
 
 

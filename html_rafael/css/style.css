@@ -4,6 +4,8 @@
 	selector { propriedade: valor(es); }
 
 */
+
+/* -------------------------- formatações gerais -----------------------------*/
 html{
 	background-color: #dddddd;
 }
@@ -28,9 +30,21 @@ h1{
 	font-weight: 100;
 }
 
+p{
+	color:#555;
+}
+
+/* -------------------------- navegação principal -----------------------------*/
+
 header nav{
 	text-align: center;
 }
+
+header nav ul{
+	padding: 0;
+}
+
+/* -------------------------- Botões principais -----------------------------*/
 
 header nav>ul>li>a{
 	color:gray;
@@ -48,16 +62,10 @@ header nav>ul>li>a{
 	line-height: 45px;
 	margin-right:20px;
 	transition: all 0.2s ease;
-
 }
 
 header nav>ul>li:last-child>a{
 	margin-right: 0;
-
-}
-
-header nav>ul>li:first-child>a{
-	/*margin-left: 59px;*/
 }
 
 header nav>ul>li>a:hover{
@@ -66,33 +74,20 @@ header nav>ul>li>a:hover{
 	background-color: white;
 }
 
-
-header nav ul{
-	padding: 0;
-}
-
-
 header nav>ul>li{
 	list-style: none;
 	display: inline-block;
-	position:relative;
-	height: 57px;
+	position:relative; /* ----------- Referência para posicionamento sub-menu ----------*/
 }
-
 
 header nav ul ul{
 	display: none;
-	padding: 0;
 	width:192px;
 	position:absolute;
 	left:0;
-
 }
 
-header nav ul ul:hover{
-	display: block;
-}
-header nav>ul>li>a:hover+ul{
+header nav ul ul:hover, header nav>ul>li>a:hover+ul{
 	display: block;
 }
 
@@ -115,11 +110,43 @@ header nav>ul>li>ul>li>a{
 	transition: all 0.2s ease;
 	border-top: none;
 }
+
 header nav>ul>li>ul>li>a:hover{
 	background-color: black;
 	color: white;
 }
 
-p{
-	color:#555;
+/* -------------------------- Tabelas -----------------------------*/
+
+table{
+	border-collapse: collapse;
+}
+
+td, th{
+	padding: 12px;
+}
+/* -------------------------- linhas pares -----------------------------*/
+tr:nth-child(2n){
+	background-color: white;
+}
+/* -------------------------- linhas impares -----------------------------*/
+tr:nth-child(2n+1){
+	background-color: gray;
+	color: white;
+}
+tr:hover{
+	background-color: black;
+	color: whitesmoke;
+	transition: all 0.2s ease;
+}
+
+#tabs{
+	width:960px;
+	list-style: none;
+	display: block;
+	background-color: red;
+}
+
+#tabex1, #tabex2, #tabex3, #tabex4{
+	display: inline-block;
 }
