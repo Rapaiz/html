@@ -92,3 +92,23 @@ header nav>ul>li>ul>li>a:hover{
 	color: white;
 }
 /* ------------------  Tabelas   ------------------ */
+table{
+	border-collapse: collapse;
+	border-color: black;
+}
+td, th{
+	padding: 12px;
+}
+/* --- Linhas Pares --- */
+tr:nth-child(2n){
+	background-color: white;
+}
+/* --- Linhas Ímpares --- */
+tr:nth-child(2n+1){
+	background-color: grey;
+	color:white;
+}
+tr:hover{
+	background-color: lime;
+	color:black;
+}
