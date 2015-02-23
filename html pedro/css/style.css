@@ -5,12 +5,13 @@
 
 /* ------------------  Formatações Gerais   ------------------ */
 html{
-	background-color: white;
+	background: url('../img/confectionary.png');
+	background-attachment: fixed;
 }
 body{
 	width: 930px;
-	background-color: #f0f0f0;
-	box-shadow: 0 0 5px 4px #e0e0e0;
+	background-color: rgba(255,255,255,0.6);
+	/*box-shadow: 0 0 5px 4px #e0e0e0;*/
 	padding: 60px;
 	margin: 0 auto;
 	font-family: Georgia, Times, serif;
@@ -112,3 +113,20 @@ tr:hover{
 	background-color: lime;
 	color:black;
 }
+#tabs h4{
+	margin-top: 0px;
+}
+#tabs table:nth-child(4n) {
+	position: absolute;
+}
+#tabs table:nth-child(4n+2) {
+	position:relative;
+	left: 380px;
+	bottom: 40px;
+}
+#tabex2, #tabex4{
+	position:relative;
+	left: 380px;
+	bottom: 40px;
+}
+
