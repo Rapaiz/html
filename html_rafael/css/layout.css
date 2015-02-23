@@ -37,3 +37,9 @@ footer{
 		background-color: rgba(255,0,255,0.2);
 		clear: both;
 }
+
+@media (max-width: 600px) {
+	aside{
+		clear: both;
+	}
+}
