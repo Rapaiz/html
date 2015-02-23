@@ -7,12 +7,13 @@
 
 /* -------------------------- formatações gerais -----------------------------*/
 html{
-	background-color: #dddddd;
+	background: url('../img/cloth_alike.png');
+	background-attachment: fixed;
 }
 
 body{
 	width: 960px;
-	background-color: whitesmoke;
+	background: rgba(255, 255, 255, 0.7);
 	box-shadow: 0 0px 5px 4px #d0d0d0;
 	margin: 0 auto;
 	padding: 60px;
@@ -140,13 +141,27 @@ tr:hover{
 	transition: all 0.2s ease;
 }
 
-#tabs{
-	width:960px;
-	list-style: none;
-	display: block;
-	background-color: red;
+#tabs h4{
+	margin-bottom: 0;
+}
+#tabs table:nth-child(4n){
+	position: absolute;
+	float:left;
+	margin-bottom: -10px;
 }
 
-#tabex1, #tabex2, #tabex3, #tabex4{
-	display: inline-block;
+#tabs table:nth-child(4n+2){
+	position:relative;
+	left:360px;
+	bottom: 40px;
+}
+
+ #tabex2, #tabex4{
+		position:relative;
+		left:360px;
+		bottom: 40px;
+}
+
+ #tabex3{
+ 	margin-top: -30px;
 }

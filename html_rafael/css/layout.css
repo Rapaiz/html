@@ -1,0 +1,39 @@
+body{
+	background-image: url("../img/cloth_alike.png");
+}
+
+p{
+	margin-top: 0;
+}
+
+#wrapper {
+	background-color: rgba(0,0,0,0.3);
+	width: 90%;
+	max-width: 960px;
+	margin:0 auto;
+}
+
+header{
+	background-color: rgba(255,0,0,0.2);
+	height: 150px;
+}
+
+article{
+	background-color: rgba(0,255,0,0.2);
+	float: left;
+	width: 70%;
+	height: 400px;
+}
+
+aside{
+	background-color: rgba(0,0,255,0.2);
+	float: right;
+	width: 30%;
+	height: 400px;
+}
+
+footer{
+		height: 150px;
+		background-color: rgba(255,0,255,0.2);
+		clear: both;
+}
