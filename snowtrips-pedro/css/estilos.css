@@ -1,19 +1,24 @@
 /* ----------- | GERAIS | ----------- */
+
 body{
-	font-size: 0.9em;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 13px;
+	line-height: 130%;
 }
 div#wrapper{
 	width:70%;
 	max-width: 960px;
 	margin:0 auto;
+	background-color: #e7e7e7;
 }
 /* ----------- | HEADER | ----------- */
 
 header{
 	background-color: #4a4a4a;
-	height: 150px;
+	height: 115px;
 }
 header img{
+	margin: 20px 0 0 40px;
 	float:left;
 }
 
@@ -21,6 +26,7 @@ header img{
 
 header nav{
 	float:right;
+	margin-right: 40px;
 	width:60%;
 }
 header ul{
@@ -37,19 +43,136 @@ header nav li{
 
 header nav a{
 	display: inline-block;
-	color:#fff;
+	color:#f0f0f0;
 	text-decoration: none;
 	background-color: #676767;
 	width:115px;
-	height:60px;
+	height:22px;
+	padding-top: 48px;
 	margin-right: 5px;
 	text-transform: uppercase;
 	text-align: center;
+	border-bottom: 6px solid #858585;
+}
+header nav a:hover{
+	color:#fff;
+	background-color: #777;
+	border-bottom: 6px solid #f0f0f0;
+	padding-top: 68px;
 }
 /* ----------- | BANNER | ----------- */
+#banner img{
+	width:100%;
+	border-top: 6px solid #e7e7e7;
+	border-bottom: 6px solid #676767;
+}
 
 /* ----------- | ASIDE | ----------- */
 
+aside{
+	float: left;
+	margin: 20px 0;
+	width:28%;
+}
+aside nav ul{
+	float: right;
+	padding: 3px 0;
+	background-color: #4a4a4a;
+background: -moz-linear-gradient(left,  #e7e7e7 0%, #4a4a4a 33%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#e7e7e7), color-stop(33%,#4a4a4a)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  #e7e7e7 0%,#4a4a4a 33%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  #e7e7e7 0%,#4a4a4a 33%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  #e7e7e7 0%,#4a4a4a 33%); /* IE10+ */
+background: linear-gradient(to right,  #e7e7e7 0%,#4a4a4a 33%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e7e7', endColorstr='#4a4a4a',GradientType=1 ); /* IE6-9 */
+
+	width: 88%;
+}
+aside li{
+	list-style: none; 
+	margin-bottom: 3px;
+}
+aside li:last-child{
+	margin-bottom: 0;
+}
+aside a{
+	padding:0 10%;
+	text-decoration: none;
+	color:#4a4a4a;
+	display:block;
+	height:30px;
+	line-height: 30px;
+	width: 80%;
+	text-align: right;
+	text-transform: uppercase;
+	background-color: #f0f0f0;
+background: -moz-linear-gradient(left,  #e7e7e7 0%, #ffffff 33%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#e7e7e7), color-stop(33%,#ffffff)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  #e7e7e7 0%,#ffffff 33%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  #e7e7e7 0%,#ffffff 33%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  #e7e7e7 0%,#ffffff 33%); /* IE10+ */
+background: linear-gradient(to right,  #e7e7e7 0%,#ffffff 33%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e7e7', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+
+}
+aside a:hover, aside a.active{
+	color:#f0f0f0;
+	background-color:  #777;
+
+background: -moz-linear-gradient(left,  #e7e7e7 0%, #777777 33%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#e7e7e7), color-stop(33%,#777777)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  #e7e7e7 0%,#777777 33%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  #e7e7e7 0%,#777777 33%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  #e7e7e7 0%,#777777 33%); /* IE10+ */
+background: linear-gradient(to right,  #e7e7e7 0%,#777777 33%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e7e7', endColorstr='#777777',GradientType=1 ); /* IE6-9 */
+
+}
 /* ----------- | ARTICLE | ----------- */
 
+article{
+	margin: 20px 0;
+	padding: 20px 20px;
+	border-left:1px dashed #676767;
+	width:65%;
+	float: right;
+}
+article p:nth-child(2):first-line{
+	font-weight: bold;
+}
+article h1{
+	text-transform: uppercase;
+	font-weight: normal;
+	margin: 0 0 30px;
+}
 /* ----------- | FOOTER | ----------- */
+footer{
+	background-color: #4a4a4a;
+	clear:both;
+	position: relative;
+	height:60px;
+	padding: 20px 40px 0 40px;
+}
+footer p{
+	color:#f0f0f0;
+	float:left;
+}
+footer nav {
+	float:right;
+}
+footer nav li{
+	float: left;
+	list-style: none;
+}
+footer nav a{
+ text-decoration: none;
+ color:#f0f0f0;
+ padding: 0 10px;
+ border-left: 1px solid #f0f0f0;
+}
+footer nav a:hover{
+	text-decoration: underline;
+}
+footer nav li:first-child a{
+ border-left: none;
+}
