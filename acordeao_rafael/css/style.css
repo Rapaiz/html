@@ -1,0 +1,29 @@
+body{
+	background-color: gray;
+	font-family: sans-serif;
+}
+
+#acordion{
+	width: 300px;
+	background-color: whitesmoke;
+}
+
+.item a{
+	display:block;
+	height: 40px;
+	padding:0 10px;
+	line-height: 40px;
+	text-decoration: none;
+	color:black;
+	border:1px solid gray;
+	transition: all 0.2s ease;
+}
+
+.item a:hover , .item a.active{
+	color:white;
+	background-color: black;
+}
+
+.item p{
+	display:none;
+}
