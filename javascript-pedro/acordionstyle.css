@@ -1,0 +1,24 @@
+body{
+	background-color: Dimgrey;
+	font-family: sans-serif;
+}
+#acordion{
+	width:300px;
+	background-color: Aquamarine;
+}
+
+.item a{
+	display:block;
+	height:40px;
+	padding:0 10px;
+	line-height:40px;
+	text-decoration: none;
+	color:black;
+	border:1px solid white;
+}
+.item a:hover, .item a.active{
+	background-color: white;
+}
+.item p{
+	display: none;
+}

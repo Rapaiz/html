@@ -1,0 +1,47 @@
+form{
+	/*display: none;*/
+	max-width: 300px;
+	margin: 0 auto;
+	text-align: center;
+}
+label, input, textarea{
+	display: block;
+	margin: 10px auto;
+	border:1px solid rgba(240, 128, 128,0.7);
+	padding: 4px;
+}
+label{
+	margin-top: 25px;
+	color:LightCoral;
+	border:none;
+}
+
+span{
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	opacity: 0;
+	transition:all 1s;
+}
+a, button{
+	background-color: #fff;
+	color:LightCoral;
+	text-decoration: none;
+	border: 1px solid LightCoral;
+	display: block;
+	width:100px;
+	height:40px;
+	text-align: center;
+	line-height: 40px;
+	margin: 0 auto;
+	transition: all 1s;
+}
+a:hover, .active, button:hover{
+	background-color: LightCoral;
+	color:white;
+}
+/*
+#btnHello:hover+span{
+	opacity: 0;
+	transition:all 1s;
+}*/
