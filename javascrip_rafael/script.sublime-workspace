@@ -1,0 +1,417 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get",
+				"getElementsByName(${0:name})	Element"
+			],
+			[
+				"getE",
+				"getElementById(${0:id})	Element"
+			],
+			[
+				"valid",
+				"validEmail"
+			],
+			[
+				"prevent",
+				"preventDefault()	Event"
+			],
+			[
+				"evt",
+				"evt"
+			],
+			[
+				"my",
+				"myLabelsOriginalText"
+			],
+			[
+				"le",
+				"length	String"
+			],
+			[
+				"pre",
+				"preventDefault()	Event"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"transi",
+				"transition	Style CSS"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"display",
+				"display = 'block'	Style CSS"
+			],
+			[
+				"getel",
+				"getElementsByTagName(${0:name})	Element"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"console",
+				"console.log('$0');"
+			],
+			[
+				"ty",
+				"typeof(${0:Object})	Object"
+			],
+			[
+				"inline",
+				"display = 'inline-block'	Style CSS"
+			],
+			[
+				"bground",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"desenhar",
+				"desenharTabela"
+			],
+			[
+				"if",
+				"if	if"
+			],
+			[
+				"ami",
+				"aMinhaOutraVar"
+			],
+			[
+				"amin",
+				"aMinhaVar"
+			],
+			[
+				"am",
+				"aMinhaVar"
+			],
+			[
+				"a",
+				"aMinhaVar"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"whi",
+				"width"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"paddin",
+				"padding-right"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"al",
+				"alt	Attr"
+			],
+			[
+				"background",
+				"background-image"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"p",
+				"position"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"block",
+				"inline-block"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"text-tra",
+				"text-transform"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"php",
+				"phpinfo"
+			],
+			[
+				"hea",
+				"header	Tag"
+			],
+			[
+				"i",
+				"if	if"
+			],
+			[
+				"n",
+				"número"
+			],
+			[
+				"s",
+				"script	Tag"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 375.0,
+		"selected_items":
+		[
+			[
+				"pi",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"inp",
+				"Package Control: Install Package"
+			],
+			[
+				"th",
+				"Themr: List themes"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"them",
+				"Themr: List themes"
+			]
+		],
+		"width": 402.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Rafael Tomé/Projetos/html/html_rafael/form/form.html",
+		"/C/Users/Rafael Tomé/Projetos/html/html_rafael/form/formstyle.css",
+		"/C/Users/Rafael Tomé/Projetos/html/html_rafael/form/formscript.js",
+		"/C/Users/Rafael Tomé/Projetos/html/acordeao_rafael/css/style.css",
+		"/C/Users/Rafael Tomé/Projetos/html/acordeao_rafael/acordeao.html",
+		"/C/Users/Rafael Tomé/Projetos/html/acordeao_rafael/script.js",
+		"/C/Users/Rafael Tomé/Projetos/html/javascrip_rafael/script.js",
+		"/C/Users/Rafael Tomé/Projetos/html/javascrip_rafael/javascript.html",
+		"/C/Users/Rafael Tomé/Projetos/html/javascrip_rafael/style.css",
+		"/C/Users/Rafael Tomé/Projetos/html/html_rafael/css/layout.css",
+		"/C/Users/Rafael Tomé/Projetos/html/html_rafael/Miniprojeto/index.html",
+		"/C/Users/Rafael Tomé/Projetos/html/html_rafael/Miniprojeto/css/style.css",
+		"/C/Users/Rafael Tomé/Projetos/html/html_rafael/layout.html",
+		"/C/Users/Rafael Tomé/Projetos/html/html_rafael/css/style.css",
+		"/C/Users/Rafael Tomé/Projetos/html/html_rafael/htmltags_rafael.html",
+		"/C/Users/Rafael Tomé/Projetos/html/html_rafael/revi.html",
+		"/C/Users/Rafael Tomé/Projetos/html/css/style.css",
+		"/C/Users/Rafael Tomé/Projetos/html/htmltags_pedro.html",
+		"/C/Users/Rafael Tomé/Projetos/html/listas.html",
+		"/C/wamp/www/formtext/listas Rafael.html",
+		"/C/wamp/www/formtext/processa.php",
+		"/C/Users/Rafael Tomé/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Rafael Tomé/Projetos/html/intervalo.html",
+		"/C/Users/Rafael Tomé/Desktop/teste.html",
+		"/C/Users/Rafael Tomé/AppData/Roaming/Sublime Text 3/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/C/Users/Rafael Tomé/Desktop/exercicio 0 a 100.html",
+		"/C/Users/Rafael Tomé/Desktop/testeLogica.html",
+		"/C/Users/Rafael Tomé/Projetos/ExploringGit/ExploringGit/README.md",
+		"/C/Users/Rafael Tomé/Projetos/ExploringGit/README.md",
+		"/C/Users/Rafael Tomé/Projetos/exemploGit/README.md",
+		"/C/Users/Rafael Tomé/Projetos/exemploGit/.gitignore"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"mundo",
+			"16",
+			"53",
+			"61",
+			"h4",
+			"ol"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "script.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 299.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
