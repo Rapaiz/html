@@ -1,0 +1,8 @@
+body{
+	width: 1400px;
+	margin: 0 auto;
+}
+#banner img{
+	width: 100%;
+	position: relative;
+}
