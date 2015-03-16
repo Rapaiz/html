@@ -1,0 +1,13 @@
+#galeria{
+	height: 75px;
+	width: 259px;
+	overflow: hidden;
+
+}
+#imagens{
+	width: 620px;
+	height: 75px;
+	position:relative;
+	right:0px;
+	/*right:360px;*/
+}

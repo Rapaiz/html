@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Banner</title>
+</head>
+<body>
+	<img src="http://lorempixel.com/800/200/food/1" id="banner">
+	<script>
+	var myImage = document.getElementById("banner");
+	imgNumber = 1;
+	var id = setInterval(function(){
+		if(imgNumber < 5){
+			imgNumber++;
+			myImage.src = "http://lorempixel.com/800/200/food/" + imgNumber;
+		}
+		else{
+			imgNumber = 0;
+		}
+
+	}, 4000);
+
+	</script>
+</body>
+</html>
