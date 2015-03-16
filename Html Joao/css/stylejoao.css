@@ -11,7 +11,7 @@
  		/* ------------- Formatações Gerais -------------- */
 html{
 
-	background-color: white;
+	background-image: url('yo.png');
 }
 
 
@@ -21,9 +21,9 @@ html{
 
 body{
 	width: 70%;
-	background-color: #F0F0F0;
+	/*background-color:rgba(255,255,255, 0.3);*/
 	box-shadow: 0 0 2px 3px #E0E0E0; /* http://www.w3schools.com/cssref/css3_pr_box-shadow.asp */
-	padding: 6 0px;
+	padding: 60px;
 	margin: 0 auto;
 	font-family: Georgia, Times, serif; 
 	}
@@ -119,6 +119,7 @@ body{
 	table{
 		border-collapse: collapse;
 		border-color: black;
+	
 	}
 	td,th{
 		padding:12px;
@@ -141,6 +142,33 @@ body{
 		background-color: lime;
 		color: black;
 	}
+	#tbls table:nth-child(4n){
+		float:left;
+		position:absolute;
+		margin-left: 40%;
+	}
+	#tbls table:nth-child(12){
+		float:none;
+		position:relative;
+	}
+	#tabex2, #tabex4{
+		position: relative;
+		margin-left: 40%;
+		top:-40px;
+	}
+	#tbls table:nth-child(4n+2){
+		position:relative;
+		margin-left: 40%;
+		margin-top: -40px;
+	}
+	/*#tbls>h4>tr{
+		text-align: center;
+	}*/ 
+
+	
+
+	
+
 
 
 	

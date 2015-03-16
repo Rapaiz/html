@@ -1,0 +1,52 @@
+form{
+	display:none;
+	max-width: 300px;
+	margin: 0 auto;
+	text-align: center;
+}
+label, input, textarea{
+	display: block;
+	margin: 10px auto;
+	border: 1px solid rgba(240,128,128,0.7);
+
+}
+label{
+	margin-top: 25px;
+	color:LightCoral;
+	border:none;
+}
+
+a, button{
+	background-color: white;
+	color:lightcoral;
+	text-decoration: none;
+	border: 1px solid lightcoral;
+	display:block;
+	width:100px;
+	height:40px;
+	text-align: center;
+	line-height: 40px;
+	margin: 0 auto;
+	transition: all 1s;
+}
+a:hover, .active, button:hover{
+	background-color: LightCoral;
+	color:white;
+	height: 60px;
+	line-height: 60px;
+	font-size: 20px;
+}
+button:hover{
+	height:40px;
+	line-height: 40px;
+
+}
+p span{
+	color:LightCoral;
+	text-align: center;
+	margin-top: 20px;
+	transition: all 1s;
+	opacity:0;
+	display: block;
+	font-size: 30px;
+}

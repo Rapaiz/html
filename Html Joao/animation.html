@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animation</title>
+	<style>
+		html{
+			background-color: white;
+		}
+		body{
+			width: 800px;
+			background-color: brown;
+		}
+		#moveit{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			color: white;
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<div id="moveit">
+		<p>You move me.</p>
+	</div>
+	<script>
+		var movingForward = true;
+		var moving = false;
+		var id;
+		var left = 0;
+		var myDiv = document.getElementById("moveit");
+		
+		myDiv.addEventListener("click", function(){
+			if(!moving){
+				moving = true;
+				id = setInterval(function(){
+						if(movingForward && left < 600){
+							left = left + 5;
+							myDiv.style.left = left + "px";
+						}
+						else if(left>0){
+							movingForward = false;
+							left = left -5;
+							myDiv.style.left = left + "px";
+						}
+						else{ 
+							movingForward = true;
+						}
+					}, 10);
+			}else{
+				moving = false;
+				clearInterval(id);
+
+			}
+
+		});
+		
+
+	</script>
+</body>
+</html>
