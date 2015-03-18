@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>animate</title>
+</head>
+<body>
+		<img src="img/1.jpg" id="troca">
+
+
+	<script>
+		var id;
+		var num = 1;
+		var mudarimagem = document.getElementById("troca");
+		id = setInterval(function(){
+			if(num < 3){
+				num++;
+				mudarimagem.src = "img/" + num + ".jpg";
+				console.log(performance.now());
+				if(num == 3){
+					num=0
+				}
+			}
+			
+		}, 4000);
+
+	</script>
+</body>
+</html>

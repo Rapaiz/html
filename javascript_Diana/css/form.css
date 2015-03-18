@@ -1,0 +1,73 @@
+html, body{
+	background-color:#F0F0F0;
+}
+
+form{
+	display:none;
+}
+
+
+span{
+	/*display:none;*/
+	opacity:0;
+	color:LightCoral;
+}
+
+
+a, button{
+	display:block;
+	color:LightCoral;
+	text-decoration: none;
+	border: 1px solid LightCoral;
+	width:200px;
+	height:40px;
+	margin:0 auto;
+	text-align:center;
+	line-height:40px;
+	transition:all 1s;
+}
+
+a:hover, .active, button:hover{
+	background-color:LightCoral;
+	color:white;
+	transition:all 1s;
+}
+
+
+form{
+	margin:0 auto;
+	max-width:300px;
+	text-align:center;
+
+}
+
+label, input, textarea{
+	display:block;
+	margin:10px auto;
+	border:solid 1px rgba(240,128,128,0.5);
+	padding:5px;
+}
+
+label{
+	font-size:12px;
+	margin-top:25px;
+	color:LightCoral;
+	border:none !important;
+}
+
+button{
+	background-color:#F0F0F0;
+}
+
+p, span{
+	text-align:center;
+	margin:10px;
+}
+
+
+#btn:hover+span{
+	/*display:block;*/
+	font-size:12px;
+	opacity:1;
+	transition: all 2s;
+}

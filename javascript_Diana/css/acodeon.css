@@ -1,0 +1,28 @@
+#wrapper{
+	width:80%;
+	background-color:#F0F0F0;
+	position:relative;
+	margin:0 auto;
+}
+
+
+.item a{
+	display: inline-block;
+	width:100px;
+	height:40px;
+	background-color:grey;
+	line-height:40px;
+	text-align:center;
+	text-decoration:none;
+	margin:10px;
+	color:#FFF;
+}
+
+.item a:hover{
+	background-color:#333333;
+	
+}
+
+.item p{
+	display:none;
+}
