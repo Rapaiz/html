@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carousel</title>
+	<style>
+		#contentor {
+			height: 400px;
+			width:600px;
+			margin: 0px;
+			border: 1px solid black;
+			padding: 180px 0 0 180px;
+			-webkit-perspective: 500px;
+			-webkit-perspective-origin: 70% 80%;
+		}
+		#carousel {
+			-webkit-transform-style: preserve-3d;
+			-webkit-transform-origin: 180px;
+			-webkit-animation: rodar 8s linear infinite;
+
+		}
+		#carousel img {
+			position: absolute;
+			border: 1px solid black;
+			padding-left: 160px;
+		}
+
+		#carousel:hover{
+			-webkit-animation-play-state: paused;
+		}	 
+
+		#imagem1 {
+			-webkit-transform: rotateY(0deg) translateX(180px);
+		}
+		#imagem2 {
+			-webkit-transform: rotateY(72deg) translateX(180px);
+		}
+		#imagem3 {
+			-webkit-transform: rotateY(144deg) translateX(180px);
+		}
+		#imagem4 {
+			-webkit-transform: rotateY(216deg) translateX(180px);
+		}
+		#imagem5 {
+			-webkit-transform: rotateY(288deg) translateX(180px);
+		}
+
+		@-webkit-keyframes rodar{
+			from{
+				-webkit-transform: rotateY(0deg);
+			}
+			to{
+				-webkit-transform: rotateY(360deg);
+			}
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div id="contentor">
+		<div id="carousel">
+			<img src"" id="imagem1" width="200" height="160" alt="Paisagem" />
+			<img src"" id="imagem2" width="200" height="160" alt="Paisagem" />
+			<img src"" id="imagem3" width="200" height="160" alt="Paisagem" />
+			<img src"" id="imagem4" width="200" height="160" alt="Paisagem" />
+			<img src"" id="imagem5" width="200" height="160" alt="Paisagem" />	
+		</div>
+	</div>
+</body>
+</html>	

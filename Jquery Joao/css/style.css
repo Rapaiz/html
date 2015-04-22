@@ -1,0 +1,12 @@
+.negrito{
+	font-weight: bold;
+}
+
+.obrigatorio{
+  border: 1px solid #cc00cc; 
+}
+
+/* Prevents slides from flashing */
+#slides {
+  display:none;
+}

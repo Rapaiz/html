@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Auto Portal</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/jquery-ui.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Auto Portal</h1>
+
+  <div class="aviso" style="background-color:yellow; margin-bottom: 10px;">
+    <h3>Aviso</h3>
+    <p>Ao clicar nesta caixa o aviso desaparece!</p>
+  </div>
+
+  <div id="slides">
+    <img src="img/example-slide-1.jpg">
+    <img src="img/example-slide-2.jpg">
+    <img src="img/example-slide-3.jpg">
+    <img src="img/example-slide-4.jpg">
+  </div>
+
+  <div id="pesquisa">
+    <input placeholder="Insira a marca aqui..." type="text" id="marca">
+    <input placeholder="Insira o modelo aqui ..." type="text" id="modelo">
+    <input type="button" id="pesquisar" value="pesquisar">
+    <div id="resultado">
+      Resultado da pesquisa...
+    </div>
+  </div>
+  <fieldset>
+    <legend>Formulário de contacto</legend>
+    <form id="formulario" method="get" >
+    <p>
+      <label for="nome">Nome</label>
+      <input id="nome" />
+    </p>
+    <p>
+      <label for="telefone">Telefone</label>
+      <input id="telefone" />
+    </p>
+    <p>
+      <label for="email">E-mail</label>
+      <input id="email" type="email" required />
+    </p>
+    <p>
+      Mensagem:
+      <br/>
+      <textarea id="mensagem"></textarea>
+    </p>
+    
+    <input type="submit" value="Enviar"/>
+    </form>
+  </fieldset>
+
+
+  <div id="ir-topo-pagina" style="position: fixed; right: 0px; bottom: 0px; margin: 10px; background-color: green; padding: 5px; color: #fff; display:none; cursor:pointer; cursor:hand; z-index: 1000;">Ir para o topo</div>
+
+
+  <!--<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>-->
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')
+  </script>
+  <script src="js/vendor/jquery.slides.js"></script>
+  <script src="js/vendor/jquery-ui.js"></script>
+  <script src="js/vendor/jquery.validate.js"></script>
+  <script>
+    $(function() {
+      // aviso
+      $('.aviso').click(function() {
+        $(this).fadeOut();
+      });
+      // slider
+      $("#slides").slidesjs({
+        width: 940,
+        height: 528,
+        play: {
+          active: false,
+          effect: "slide",
+          interval: 2000,
+          auto: true,
+          pauseOnHover: true
+        }, pagination: {active: false}, navigation : {active: false}
+      });
+      
+      $('#pesquisar').button().click(function(){
+      
+        var marca = $("#marca").val();
+        var modelo = $("#modelo").val();
+        var carroMarcaModelo = encodeURI(marca + " " + modelo);
+        var urlweb = "https://services.sapo.pt/Auto/JSON?q=Brand:" + carroMarcaModelo;
+        
+        $.ajax({
+        url: urlweb, 
+        dataType: "json", 
+        success: function(xhr, status, error){
+          //debugger;
+          
+          if (status == "success") {
+            var listaCarros = "a minha lista: <br/>";
+           
+            try{
+              for (var i = 0; i < xhr.rss.channel.item.length; i++) {
+                listaCarros += xhr.rss.channel.item[i].title + "<br/>";
+              }
+
+              $("#resultado").html(listaCarros);
+            }
+            catch(e){$("#resultado").html("Erro na resposta do WebService (" + e +")");}
+              
+          } else {
+            $("#resultado").html("lista inválida");
+          }
+        },
+        error: function(xhr, status, error){
+          $("#resultado").html("Ocorreu um erro: " + error);
+        },
+        beforeSend: function(){
+          $("#resultado").html("Aguarde...");
+        }
+      });
+      });
+      
+      var arrayMarcas = ['Audi', 'Citroen', 'BMW', 'Toyota', 'Honda'];
+      $('#marca').autocomplete({
+        source:arrayMarcas
+      });
+      
+      $("#formulario").validate();
+      
+      $(window).scroll(function(){
+        if ($(this).scrollTop() > 100 ) {
+           $("#ir-topo-pagina").fadeIn();
+        } else {
+          $("#ir-topo-pagina").fadeOut();
+        }
+      });
+ 
+      
+      $("#ir-topo-pagina").click(function(){
+        $("html, body").animate({scrollTop:0}, 800);
+      });
+      
+    });
+  </script>
+</body>
+
+</html>
+

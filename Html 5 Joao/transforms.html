@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Transforms</title>
+<style>
+	h1{
+		font-size: 4em;
+		border: 3px double red;
+		width: 55px;
+		text-align: center;
+	}
+
+	#b h1{
+		transform: rotate(20deg);
+		transition: .çall 1s;
+	}
+	#c h1{
+		transform: rotate(-45deg);
+		transition: all 1s;
+	}
+	#a h1{
+		transition: all 1s;
+	}
+	#a h1:hover{
+		transform: rotate(180deg);
+	}
+	#c h1:hover{
+		transform: scale(2) rotate(30deg);
+	}
+	#b h1:hover{
+		transform: skew(60deg,40deg);
+	}
+</style>
+</head>
+
+<body>
+	<div id=-º"a"><h1>A</h1><p>original</p></div>
+	<div id="b"><h1>B</h1><p-º-rotação 20 graus</p></div>
+	<div id="c"><h1>C</h1><p>rotaçao -45 graus</p></div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Template</title>
+	<link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+	
+	<div>
+     	<ul>
+        	<li id="moo">MooTools</li>
+        	<li>Prototype</li>
+        	<li>jQuery
+        	  <ul>
+        	      <li>jQuery Core</li>
+        	      <li class="negrito">jQuery Mobile</li>
+        	      <li>jQuery UI</li>
+        	    </ul>
+        	</li>
+      	</ul>
+ 	</div>
+
+	<link rel="stylesheet" href="css/mytheme.css"/>
+	<!--<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>-->
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script>window.jquery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
+	<script src="js/myscript.js"></script>
+	<script>
+
+		$(document).ready(function(){
+			var conteudo = $('div').text;
+
+			//$('div').html('conteudo alternativo');
+
+			$('div > ul > li > ul > li.negrito').html('Workshop!');
+			
+			$('div > ul > li > ul > li').html(function(index, oldHtml){
+				return oldHtml + '...';
+			});
+
+			//$('div > ul > li > ul > li').addClass('negrito')
+
+			//$('div > ul > li > ul > li').toggleClass('negrito')
+
+			$('div > ul > li > ul > li').click(function(){
+         		 $(this).toggleClass("negrito");
+     		 });
+
+			
+			$('div > ul > li > ul > li').click(function(){
+          		$(this).hide();
+     		 });
+
+			$('html, body').click(function(){
+        		var cor = $(this).css("background-color");
+        //alert(cor);
+        
+       		 if (cor == "transparent" || cor == "" || cor == "red" || cor == "rgb(255, 0, 0)") {
+         		$(this).css("background-color", "yellow");
+        	} else {
+          		$(this).css("background-color", "red");
+        	}
+     		 });
+
+			$('div > ul > li > ul > li').each(function(){
+				$(this).toggleClass()
+			})
+
+
+		});
+
+	</script>
+
+
+
+</body>
+</html>

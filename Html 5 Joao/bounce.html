@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+  <style>
+  	 
+  	 #stage{
+      position: relative;
+      margin: 0 auto;
+      width: 100%;
+      height: 500px;
+      border:2px solid black;
+      background-color: #cff; 
+	 }
+
+	 #traveler{
+	 	position: absolute;
+	 	width: 20px;
+	 	height: 500px;
+	 	background-color: none;
+	 	-webkit-animation: travel 20s infinite linear alternate;
+	 }
+
+
+
+	 #bouncer{
+	 	position: absolute;
+	 	width: 20px;
+	 	height: 20px;
+	 	border-radius: 20px;
+	 	background-color: red;
+	 	-webkit-animation: bounce 4s infinite;
+	 }
+
+	 @-webkit-keyframes travel {
+	 	from {
+	 		left: 0px; 
+	 	}
+	 	to {
+	 		left:98%;
+	 	}
+	 }
+
+
+	 @-webkit-keyframes bounce {
+	 	from, to {
+	 		bottom: 0px;
+	 		-webkit-animation-timing-function: ease-out;
+	 		-webkit-transform: scaleY(0.5);
+	 	}
+	 	3% {
+	 		-webkit-transform: scaleY(1);
+	 	}
+	 	50% {
+	 		bottom: 450px;
+	 		-webkit-animation-timing-function: ease-in;
+	 	}
+	 	97% {
+	 		-webkit-transform: scaleY(1);
+	 	}
+
+	 }
+
+
+
+
+
+
+
+  </style>
+</head>
+<body>
+<div id="stage">
+	<div id="traveler">
+		<div id="bouncer"></div>
+	</div>
+</div>
+</body>
+</html>
+
+

@@ -14,10 +14,9 @@
 		
 		id = setInterval(function(){
 			if(num < 3){
-				num++;
-				mudarImagens.src = "img/banner4imagens/" + num + ".jpg";
-			}else{
-				num=1;
+				
+				mudarImagens.src = "img/banner4imagens/" + ++num + ".jpg";
+				if(num == 3){num = 0}
 			}
 
 		}, 3000);

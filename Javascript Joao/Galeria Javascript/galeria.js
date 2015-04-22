@@ -3,23 +3,36 @@ var imagensPequenas = document.getElementById("imagens").getElementsByTagName("i
 var btnLeft = document.getElementById("btn_left");
 var btnRight = document.getElementById("btn_right");
 var imagensDiv = document.getElementById("imagens");
+var right = 0;
 
 imagensDiv.style.right = "0px";
 
-btnLeft.addEventListener("click", trocarImagemBotoes);
-btnRight.addEventListener("click", trocarImagemBotoes);
+btnLeft.addEventListener("mousedown", moverImagens);
+btnRight.addEventListener("mousedown", moverImagens);
+btnLeft.addEventListener("mouseup", pararImagens);
+btnRight.addEventListener("mouseup", pararImagens);
+	
+function pararImagens(){
+	clearInterval(id);
+}
 
-function trocarImagemBotoes(){
+function moverImagens(){	
 	if(this.id == "btn_left"){
-		if(parseInt(imagensDiv.style.right)<360){
-			imagensDiv.style.right = parseInt(imagensDiv.style.right) + 20 + "px";
+		id = setInterval(function(){
+		if(right<360){
+			right = right + 2;
+			imagensDiv.style.right = right + "px";
 		}
+	}, 10);
 	}else{
-		
-		if(parseInt(imagensDiv.style.right)>0){
-			imagensDiv.style.right = parseInt(imagensDiv.style.right) - 20 + "px";
+		id = setInterval(function(){
+		if(right>0){
+			right = right - 2;
+			imagensDiv.style.right = right + "px";
 		}
+		}, 10);
 	}
+
 
 }
 
