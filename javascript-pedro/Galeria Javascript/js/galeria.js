@@ -4,22 +4,31 @@ var btnLeft = document.getElementById("btn_left");
 var btnRight = document.getElementById("btn_right");
 var imagensDiv = document.getElementById("imagens");
 
-
-
 btnLeft.addEventListener("mousedown", moverImagens);
 btnRight.addEventListener("mousedown", moverImagens);
-imagensDiv.style.right = "0px";
-
+var right = 180;
+var id;
+btnLeft.addEventListener("mouseup", pararImagens);
+btnRight.addEventListener("mouseup", pararImagens);
+function pararImagens(){
+	clearInterval(id);
+}
 function moverImagens(){
-	if(this.id == "btn_left"){
-		if(parseInt(imagensDiv.style.right)<360){
-			imagensDiv.style.right = parseInt(imagensDiv.style.right) + 20 + "px";
+		if(this.id == "btn_left"){
+			id = setInterval(function(){
+				if(right<360){
+					right = right + 2;
+					imagensDiv.style.right = right + "px";
+				}
+			}, 10);
+		}else{
+			id = setInterval(function(){
+				if(right>0){
+					right = right - 2;
+					imagensDiv.style.right = right + "px";
+				}
+			}, 10);
 		}
-	}else{
-		if(parseInt(imagensDiv.style.right)>0){
-			imagensDiv.style.right = parseInt(imagensDiv.style.right) - 20 + "px";
-		}
-	}
 }
 
 for(var i = 0; i < imagensPequenas.length; i++){

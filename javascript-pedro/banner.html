@@ -5,21 +5,24 @@
 	<title>Banner</title>
 </head>
 <body>
-	<img src="http://lorempixel.com/800/200/food/1" id="banner">
+	<img src="1.jpg" id="banner">
 	<script>
+	console.log(performance.now());
+
 	var myImage = document.getElementById("banner");
 	imgNumber = 1;
+
 	var id = setInterval(function(){
 		if(imgNumber < 5){
 			imgNumber++;
-			myImage.src = "http://lorempixel.com/800/200/food/" + imgNumber;
+			myImage.src = imgNumber + ".jpg";
+			console.log(myImage);
+			console.log(performance.now());
+			if(imgNumber == 5){
+				imgNumber = 0;
+			}
 		}
-		else{
-			imgNumber = 0;
-		}
-
-	}, 4000);
-
+	}, 2000);
 	</script>
 </body>
 </html>
