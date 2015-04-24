@@ -1,9 +1,19 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css);
+
+
+.job h1{
+	float:none;
+	display: inline;
+	position: static;
+	line-height: 20px;
+	margin-top: 0px;
+	font-size: 50px;
+}
+
 .envelope{
-	display: block;
-	width: 50px;
 	float:right;
-	line-height: 240px;
-	margin-right: 10px;
+	padding-right: 160px;
+	padding-top: 80px;
 }
 
 header h9{
@@ -16,19 +26,24 @@ header h9{
 footer{
 	height:40px;
 	border-top: 1px solid white;
-	margin-top: 260px;
+	margin-top: 213px;
 	color: white;
 	text-align: center;
+	line-height: 40px;
+
 }
 
+html{
+	background-image: url(../images/swirl_pattern.png);
+}
 
 body{
-	background-color: #505050;
+	background-color: rgba(80,80,80,0.9);
+
 }
 
 .fa{
 	color:white;
-
 }
 
 header .fa{
@@ -36,21 +51,25 @@ header .fa{
 }
 
 h1{
-	line-height: 220px;
-	margin-left: 300px;
-	font-family: "Codystar", cursive;
-	color: #009999;
+	line-height: 200px;
+	margin-left: 200px;
+	/*-font-family: "Codystar", cursive;*/
+	font-family: 'Cabin Sketch', cursive;
+	color: rgba(0,153,153,0.6);
 	display:block;
 	width: 40%;
 	float:left;
-	position:absolute;
+	font-size: 2em;
+	font-weight: bold;
+	position: absolute;
 }
 
 header{
-	height: 150px;
+	height: 120px;
 	border-bottom-width: 100%;
 	border-bottom: 1px solid white;
 	position:relative;
+	margin-bottom: 20px;
 }
 
 .ch-item {
