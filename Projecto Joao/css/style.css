@@ -3,17 +3,31 @@
 
 .job h1{
 	float:none;
-	display: inline;
 	position: static;
-	line-height: 20px;
-	margin-top: 0px;
-	font-size: 50px;
+	font-size: 20px;
+	font-weight: none;
+	padding-bottom: 100px;
+	padding-top: 50px;
+	margin-left: 160px;
+	font-family: 'Amatic SC', cursive;
 }
 
 .envelope{
 	float:right;
-	padding-right: 160px;
-	padding-top: 80px;
+	padding-right: 140px;
+	padding-top: 40px; 
+}
+
+.ending h1{
+	font-family: arial;
+	line-height: 55px;
+	font-size: 20px;
+	font-family: 'Amatic SC', cursive;
+	display: inline;
+	text-align: center;
+	position: relative;
+	margin-left: none;
+	width: 76%;
 }
 
 header h9{
@@ -24,21 +38,34 @@ header h9{
 }
 
 footer{
-	height:40px;
-	border-top: 1px solid white;
+	border-top: 2px solid #009999;
 	margin-top: 213px;
 	color: white;
 	text-align: center;
 	line-height: 40px;
+	background-color: rgba(80,80,80,0.7);
+	border-bottom-left-radius: 25px;
+	border-bottom-right-radius: 25px;
 
 }
 
 html{
 	background-image: url(../images/swirl_pattern.png);
+	padding-top: 60px;
+	padding-left: 20px;
+	padding-right: 20px;
+
 }
 
 body{
-	background-color: rgba(80,80,80,0.9);
+	background-color: rgba(80,80,80,0.8);
+	height: 100%;
+	padding-bottom: 0px;
+	border-radius: 25px;
+		-webkit-box-shadow: 0px 13px 9px -6px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 13px 9px -6px rgba(0,0,0,0.75);
+		box-shadow: 0px 13px 9px -6px rgba(0,0,0,0.75);
+
 
 }
 
@@ -51,27 +78,30 @@ header .fa{
 }
 
 h1{
-	line-height: 200px;
+	line-height: 130px;
 	margin-left: 200px;
 	/*-font-family: "Codystar", cursive;*/
-	font-family: 'Cabin Sketch', cursive;
-	color: rgba(0,153,153,0.6);
+	/*font-family: 'Cabin Sketch', cursive;*/
+	font-family: 'Amatic SC', cursive;
+	color: white;
 	display:block;
 	width: 40%;
 	float:left;
-	font-size: 2em;
-	font-weight: bold;
+	font-size: 30px;
 	position: absolute;
+	padding-bottom: 0px;
 }
 
 header{
-	height: 120px;
-	border-bottom-width: 100%;
-	border-bottom: 1px solid white;
+	height: 90px;
+	border-bottom: 2px solid #009999;
 	position:relative;
-	margin-bottom: 20px;
+	background-color: rgba(80,80,80,0.7);
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
 }
 
+/* Paineis */
 .ch-item {
 	width: 100%;
 	height: 100%;
@@ -98,10 +128,10 @@ header{
 	-o-transition: all 0.4s ease-in-out;
 	-ms-transition: all 0.4s ease-in-out;
 	transition: all 0.4s ease-in-out;
-
+/* Altera o efeito a rodar */
 	top: 20px;
 	left: 20px;
-	background: #f9f9f9 url(../images/bg.jpg);
+	background: #FFFFFF url(../images/swirl_pattern.png);
 	box-shadow: 
 		0 0 0 20px rgba(255,255,255,0.2), 
 		inset 0 0 3px rgba(115,114, 23, 0.8);
@@ -150,7 +180,7 @@ header{
 	-ms-transform: rotate3d(0,1,0,180deg);
 	transform: rotate3d(0,1,0,180deg);
 	
-	background: #505050;
+	background: rgba(80,80,80,0.9);
 }
 
 .ch-img-1 { 
@@ -167,10 +197,10 @@ header{
 
 .ch-info h3 {
 	color: #fff;
+	display: static;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	font-size: 14px;
-	margin: 0 15px;
+	font-size: 10px;
 	padding: 40px 0 0 0;
 	height: 90px;
 	font-family: 'Open Sans', Arial, sans-serif;
@@ -197,7 +227,6 @@ header{
 	text-transform: uppercase;
 	font-size: 9px;
 	letter-spacing: 1px;
-	padding-top: 4px;
 	font-family: 'Open Sans', Arial, sans-serif;
 }
 
@@ -218,4 +247,94 @@ header{
 	-o-transform: rotate3d(0,1,0,-180deg);
 	-ms-transform: rotate3d(0,1,0,-180deg);
 	transform: rotate3d(0,1,0,-180deg);
+}
+
+.main{
+	padding-top: 150px;
+}
+
+/* MAIL BUTTON */
+
+form{
+	display: none;
+	max-width: 200px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 12px;
+}
+
+label, input, textarea{
+	display: block;
+	margin: 10px auto;
+	border: 2px dotted #009999;
+	border-radius: 25px;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+label{
+	margin-top: 25px;
+	color:white;
+	border:none;
+	font-family: 'Amatic SC', cursive;
+	font-size: 22px;
+}
+
+input, textarea{
+	height: 20px;
+	width: 180px;
+}
+
+textarea{
+	height: 80px;
+	padding-top: 10px;
+}
+
+a, button{
+
+	color:#009999;
+	text-decoration: none;
+	display:block;
+	width:100px;
+	height:60px;
+	text-align: center;
+	line-height: 60px;
+	margin: 0 auto;
+	transition: all 0.5s;
+}
+
+button{
+	height: 40px; 
+	width: 80px;
+	background-color: transparent;
+	border:none;
+	border-bottom: 1px solid white;
+	padding-bottom: 40px;
+	font-size: 15px;
+}
+a:hover, .active, button:hover{
+	color:white;
+	height: 60px;
+	line-height: 60px;
+	font-size: 20px;
+}
+button:hover{
+	height:40px;
+	line-height: 55px;
+	padding-bottom:40px;
+	color:#99FF66;
+	transition: all 0.5s;
+	font-size: 16px;
+
+}
+p span{
+	color:#009999;
+	text-align: center;
+	margin-top: 20px;
+	transition: all 0.5s;
+	opacity:0;
+	display: static;
+	font-size: 40px;
+	border-bottom: 1px solid white;
+	font-family: 'Amatic SC', cursive;
 }
